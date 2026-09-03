@@ -9,7 +9,7 @@ body {
 }
 .navbar{
     width: 100%;
-    padding: 35px 0;
+    padding: 24px 0;
     border-bottom: 1px solid #30363D;
 }
 .nav-container{
@@ -41,21 +41,32 @@ body {
 .nav-right {
     display: flex;
     align-items: center;
-    gap: 190px;
+    gap: 70px;
 }
 .resume-btn {
     display: inline-block;
     padding: 10px 22px;
-    color: #E6EDF3;
+    color: #0D1117;
     border: 1px solid #00D9A3;
     border-radius: 6px;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 600;
-    transition: 0.5s ease;
+    transition: all 0.3s ease;
     background-color: #00D9A3;
+    box-shadow: 0 4px 12px rgba(0, 217, 163, 0.12);
 }
 .resume-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 0 18px rgba(0, 217, 163, 0.25);
+    background-color: #00b98b;
+    border-color: #00b98b;
+    box-shadow: 0 6px 18px rgba(0, 217, 163, 0.25);
+}
+.nav-links a {
+    color: #E6EDF3;
+    text-decoration: none;
+    font-size: 1.6rem;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #00D9A3;
 }
