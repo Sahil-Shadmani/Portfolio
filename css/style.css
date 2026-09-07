@@ -5,14 +5,17 @@
     box-sizing: border-box;
 }
 body {
-    font-family: 'Space Grotesk', sans-serif;
-      background: radial-gradient(
-        circle at 80% 60%,
-        rgba(0, 217, 163, 0.08),
-        transparent 35%
-    ),
-    #0D1117;
+    background:
+     
+        radial-gradient(
+            circle at 10% 90%,
+            rgba(0, 217, 163, 0.05),
+            transparent 35%
+        ),
+        #0D1117;
+
     color: #E6EDF3;
+    font-family: 'Space Grotesk', sans-serif;
 }
 .navbar{
     width: 100%;
@@ -126,9 +129,10 @@ font-weight: 400;
     gap: 20px;
 }
 .primary-btn {
-    display: inline-block;
-    
-
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     background-color: #00D9A3;
     color: #0D1117;
 
@@ -140,6 +144,10 @@ font-weight: 400;
     font-weight: 600;
 
     transition: all 0.3s ease;
+}
+.primary-btn i {
+    font-size: 0.9rem;
+    padding-top: 2.35px;
 }
 .secondary-btn {
     display: inline-block;
