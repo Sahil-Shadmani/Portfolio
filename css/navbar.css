@@ -1,0 +1,73 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #30363D;
+    background-color: #0D1117;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #00D9A3;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #E6EDF3;
+    text-decoration: none;
+    font-size: 1.28rem;
+    font: bold;
+    font-weight: 700;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background-color: #00D9A3;
+    color: #0D1117 !important;
+    border: 1px solid #00D9A3;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: .85rem;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0, 217, 163, 0.12);
+    transition: all 0.2s ease;
+}
+
+.resume-btn:hover {
+    background-color: #00b98b;
+    border-color: #00b98b;
+    box-shadow: 0 6px 18px rgba(0, 217, 163, 0.25);
+}
+
+.resume-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(0, 217, 163, 0.15);
+}
+
+.nav-links a:hover {
+    color: #00D9A3;
+    text-shadow: 0 0 10px rgba(0, 217, 163, 0.35);
+}

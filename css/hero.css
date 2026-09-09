@@ -1,0 +1,155 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: 75px;
+
+    background:
+        radial-gradient(circle at 0% 100%,
+            rgba(0, 217, 163, 0.08),
+            transparent 55%);
+}
+
+.hero-content {
+    padding: 4.8%;
+}
+
+.container {
+    width: 89%;
+    margin: 0 auto;
+}
+
+.hero-greeting {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    color: #8B949E;
+    font-weight: 400;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1.05;
+    margin-bottom: 16px;
+    color: #E6EDF3;
+    font-weight: 700;
+}
+
+.hero h2 {
+    font-size: 2.8em;
+    margin-bottom: 40px;
+    color: #00D9A3;
+    font-weight: 600;
+}
+
+
+
+.hero-description {
+    max-width: 670px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 26px;
+    color: #8B949E;
+    font-weight: 400;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.primary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    background-color: #00D9A3;
+    color: #0D1117;
+
+    border: 1px solid #00D9A3;
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.primary-btn i {
+    font-size: 0.9rem;
+    padding-top: 2.35px;
+}
+
+.secondary-btn {
+    display: inline-block;
+
+
+    background-color: transparent;
+    color: #E6EDF3;
+
+    border: 1px solid #30363D;
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    background-color: #00b98b;
+    border-color: #00b98b;
+    box-shadow: 0 6px 18px rgba(0, 217, 163, 0.2);
+}
+
+.secondary-btn:hover {
+    color: #00D9A3;
+    border-color: #00D9A3;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 14px 28px;
+    font-size: .8rem;
+}
+
+.primary-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 6px rgba(0, 217, 163, 0.15);
+}
+
+.secondary-btn:active {
+    transform: translateY(2px);
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #8B949E;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.social-link i {
+    font-size: 1.2rem;
+}
+
+.social-link:hover {
+    color: #00D9A3;
+    text-shadow: 0 0 10px rgba(0, 217, 163, 0.35);
+}
+
+.social-link:active {
+    transform: translateY(2px);
+}
