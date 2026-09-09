@@ -399,13 +399,17 @@ body {
     gap: 25px;
 }
 
+/* =========================
+   Skill Cards
+   ========================= */
+
 .skill-group {
-    
+    background-color: #161B22;
     border: 1px solid #30363D;
     border-radius: 10px;
     padding: 28px;
+
     transition:
-        transform 0.3s ease,
         border-color 0.3s ease,
         box-shadow 0.3s ease;
 }
@@ -415,10 +419,16 @@ body {
     box-shadow: 0 8px 20px rgba(0, 217, 163, 0.08);
 }
 
+/* Large Frontend Card */
+
 .skill-group.frontend {
     grid-column: 1;
     grid-row: 1 / 4;
 }
+
+/* =========================
+   Skill Headings
+   ========================= */
 
 .skill-group h3 {
     color: #E6EDF3;
@@ -434,10 +444,14 @@ body {
     margin-bottom: 25px;
 }
 
+/* =========================
+   Skill List
+   ========================= */
+
 .skill-list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 18px;
 }
 
 .skill-list.horizontal {
@@ -447,29 +461,22 @@ body {
     gap: 25px;
 }
 
+/* =========================
+   Individual Skill
+   ========================= */
+
 .skill-item {
     display: flex;
     align-items: center;
     gap: 10px;
+
     color: #E6EDF3;
     font-size: 1rem;
     font-weight: 500;
 }
 
-.skill-item i {
-    color: #6EE7B7;
-    font-size: 1.4rem;
-}
-
-.text-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 28px;
+.skill-item img {
+    width: 28px;
     height: 28px;
-    color: #6EE7B7;
-    border: 1px solid #30363D;
-    border-radius: 5px;
-    font-size: 0.65rem;
-    font-weight: 700;
+    object-fit: contain;
 }
