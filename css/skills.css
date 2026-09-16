@@ -15,11 +15,18 @@
 
 .skills h2 {
     color: #E6EDF3;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
-
+.skills-description {
+ max-width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #8B949E;
+    font-weight: 400;
+}
 
 /* =========================
    Skills Layout
@@ -138,7 +145,7 @@
 
     color: #E6EDF3;
     font-size: 1.15rem;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -154,4 +161,20 @@
 }
 .skill-group.learning .skill-item:last-child {
     gap: 5px;
+}
+.skill-group.frontend .skill-item:nth-child(4) {
+    gap: 25px;
+}
+.skill-group.programming .skill-item:nth-child(2) {
+    gap: 25px;
+}
+.skill-group.learning .skill-list.horizontal {
+    gap: 50px;
+}
+.skill-group.programming .skill-item:nth-child(2) img {
+    width: 70px;
+    height: 70px;
+}
+.skill-group.learning .skill-item:nth-child(2) {
+    transform: translateX(13px);
 }
