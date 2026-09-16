@@ -153,3 +153,135 @@
 .social-link:active {
     transform: translateY(2px);
 }
+/* =========================
+   Hero Terminal - Right Side
+   ========================= */
+
+.hero {
+    position: relative;
+}
+
+.hero-terminal {
+    position: absolute;
+    top: 53%;
+    right: 8%;
+    transform: translateY(-50%);
+
+    width: 500px;
+
+   
+
+    border: 1px solid #30363D;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25),
+        0 0 30px rgba(0, 217, 163, 0.06);
+}
+
+
+/* =========================
+   Terminal Header
+   ========================= */
+
+.terminal-header {
+    position: relative;
+
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 16px;
+
+    
+
+    border-bottom: 1px solid #30363D;
+}
+
+
+/* =========================
+   Terminal Dots
+   ========================= */
+
+.terminal-dots {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot.red {
+    background-color: #FF5F57;
+}
+
+.dot.yellow {
+    background-color: #FEBC2E;
+}
+
+.dot.green {
+    background-color: #28C840;
+}
+
+
+
+/* =========================
+   Terminal Body
+   ========================= */
+
+.terminal-body {
+    padding: 30px;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    line-height: 2;
+
+    color: #E6EDF3;
+}
+
+
+/* =========================
+   Code Lines
+   ========================= */
+
+.code-line {
+    white-space: nowrap;
+}
+
+.code-line.indent {
+    padding-left: 30px;
+}
+
+
+/* =========================
+   Portfolio Code Colors
+   ========================= */
+
+.keyword {
+    color: #00D9A3;
+}
+
+.variable {
+    color: #E6EDF3;
+}
+
+.property {
+    color: #6EE7B7;
+}
+
+.string {
+    color: #8B949E;
+}
+
+.operator,
+.bracket,
+.comma {
+    color: #E6EDF3;
+}

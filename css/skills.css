@@ -1,12 +1,16 @@
+/* =========================
+   Skills Section
+   ========================= */
+
 .skills {
-    padding: 110px 0;
-    padding-left: 4.8%;
-    padding-right: 4.8%;
+    padding: 110px 4.8%;
 
     background:
-        radial-gradient(circle at 0% 10%,
+        radial-gradient(
+            circle at 0% 10%,
             rgba(0, 217, 163, 0.08),
-            transparent 50%);
+            transparent 50%
+        );
 }
 
 .skills h2 {
@@ -16,11 +20,20 @@
     margin-bottom: 50px;
 }
 
+
+/* =========================
+   Skills Layout
+   ========================= */
 .skills-layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 25px;
+    column-gap: 15px;
+    row-gap: 20px;
 }
+
+/* =========================
+   Skill Cards
+   ========================= */
 
 .skill-group {
     border: 1px solid #30363D;
@@ -41,76 +54,101 @@
     box-shadow: 0 8px 20px rgba(0, 217, 163, 0.08);
 }
 
-.skill-group.frontend,
-.skill-group.learning {
-    grid-column: 1 / 3;
+
+/* =========================
+   Frontend
+   ========================= */
+
+.skill-group.frontend {
+    grid-column: 1 / -1;
+    width: 100%;
 }
+
+
+/* =========================
+   Programming & Database
+   ========================= */
+
+.skill-group.programming {
+    width: 540px;
+    justify-self: end;
+}
+
+.skill-group.tools {
+    width: 540px;
+    justify-self: start;
+}
+
+/* =========================
+   Currently Learning
+   ========================= */
+
+.skill-group.learning {
+    grid-column: 1 / -1;
+
+    width: 780px;
+    justify-self: center;
+}
+
+
+/* =========================
+   Skill Headings
+   ========================= */
 
 .skill-group h3 {
     color: #E6EDF3;
     font-size: 1.8rem;
     font-weight: 600;
-    margin-bottom: 15px;
+
+    margin-bottom: 20px;
+    margin-top: -10px;
+
     text-align: center;
-    margin-top: -15px;
 }
 
-.skill-group p {
-    color: #8B949E;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 28px;
-    text-align: center;
-}
+/* =========================
+   Skill List
+   ========================= */
 
 .skill-list {
     display: flex;
     align-items: center;
     justify-content: center;
+
     flex-wrap: wrap;
-    gap: 30px 95px;
+
+    gap: 30px 80px;
 }
 
 .skill-list.horizontal {
     flex-wrap: nowrap;
-    gap: 45px;
+    gap: 40px;
 }
+
+
+/* =========================
+   Individual Skill
+   ========================= */
 
 .skill-item {
     display: flex;
     align-items: center;
+
     gap: 20px;
 
     color: #E6EDF3;
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     font-weight: 500;
 }
 
+
+/* =========================
+   Skill Logos
+   ========================= */
+
 .skill-item img {
-    width: 60px;
-    height: 60px;
+    width: 63px;
+    height: 63px;
+
     object-fit: contain;
-}
-
-.PandD {
-    max-width: 500px;
-    margin-left: 50px;
-}
-
-.TandW {
-    max-width: 680px;
-    margin-right: 50px;
-}
-
-.CandL {
-    max-width: 680px;
-    margin-left: 270px;
-}
-
-.skill-group.programming {
-    transform: translateX(20px);
-}
-
-.skill-group.tools {
-    transform: translateX(-20px);
 }
