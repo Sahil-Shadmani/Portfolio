@@ -152,3 +152,6 @@
 
     object-fit: contain;
 }
+.skill-group.learning .skill-item:last-child {
+    gap: 5px;
+}
