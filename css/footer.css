@@ -1,0 +1,91 @@
+/* =========================
+   Footer
+   ========================= */
+
+.footer {
+    padding: 25px 4.8%;
+    border-top: 1px solid rgba(48, 54, 61, 0.5);
+    background-color: #0D1117;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* =========================
+   Social Links
+   ========================= */
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.footer-social {
+    color: #8B949E;
+    font-size: 1.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.footer-social:hover {
+    color: #00D9A3;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Footer Info
+   ========================= */
+
+.footer-info {
+    text-align: right;
+}
+
+.footer-info p {
+    margin: 0;
+    color: #8B949E;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.footer-info p:first-child {
+    color: #E6EDF3;
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .footer {
+        padding: 25px 6%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 18px;
+        text-align: center;
+    }
+
+    .footer-socials {
+        gap: 25px;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+
+}

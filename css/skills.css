@@ -20,7 +20,7 @@
     margin-bottom: 25px;
 }
 .skills-description {
- max-width: 100%;
+    max-width: 100%;
     font-size: 1.4rem;
     line-height: 1.5;
     margin-bottom: 40px;
@@ -150,7 +150,7 @@
 
 
 /* =========================
-   Skill Logos
+   Skill Logos & Offsets
    ========================= */
 
 .skill-item img {
@@ -159,22 +159,28 @@
 
     object-fit: contain;
 }
+
 .skill-group.learning .skill-item:last-child {
     gap: 5px;
 }
+
 .skill-group.frontend .skill-item:nth-child(4) {
     gap: 25px;
 }
+
 .skill-group.programming .skill-item:nth-child(2) {
     gap: 25px;
 }
+
 .skill-group.learning .skill-list.horizontal {
     gap: 50px;
 }
+
 .skill-group.programming .skill-item:nth-child(2) img {
     width: 70px;
     height: 70px;
 }
+
 .skill-group.learning .skill-item:nth-child(2) {
     transform: translateX(13px);
 }
