@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     padding-top: 75px;
-
     background:
         radial-gradient(circle at 0% 100%,
             rgba(0, 217, 163, 0.08),
@@ -41,8 +40,6 @@
     font-weight: 600;
 }
 
-
-
 .hero-description {
     max-width: 670px;
     font-size: 1.4rem;
@@ -65,14 +62,10 @@
     gap: 9px;
     background-color: #00D9A3;
     color: #0D1117;
-
     border: 1px solid #00D9A3;
     border-radius: 6px;
-
     text-decoration: none;
-
     font-weight: 600;
-
     transition: all 0.3s ease;
 }
 
@@ -83,17 +76,12 @@
 
 .secondary-btn {
     display: inline-block;
-
-
     background-color: transparent;
     color: #E6EDF3;
-
     border: 1px solid #30363D;
     border-radius: 6px;
-
     text-decoration: none;
     font-weight: 600;
-
     transition: all 0.3s ease;
 }
 
@@ -153,9 +141,6 @@
 .social-link:active {
     transform: translateY(2px);
 }
-/* =========================
-   Hero Terminal - Right Side
-   ========================= */
 
 .hero {
     position: relative;
@@ -166,45 +151,23 @@
     top: 53%;
     right: 8%;
     transform: translateY(-50%);
-
     width: 500px;
-
-   
-
     border: 1px solid #30363D;
     border-radius: 10px;
-
     overflow: hidden;
-
     box-shadow:
         0 15px 40px rgba(0, 0, 0, 0.25),
         0 0 30px rgba(0, 217, 163, 0.06);
 }
 
-
-/* =========================
-   Terminal Header
-   ========================= */
-
 .terminal-header {
     position: relative;
-
     height: 44px;
-
     display: flex;
     align-items: center;
-
     padding: 0 16px;
-
-    
-
     border-bottom: 1px solid #30363D;
 }
-
-
-/* =========================
-   Terminal Dots
-   ========================= */
 
 .terminal-dots {
     display: flex;
@@ -230,12 +193,6 @@
     background-color: #28C840;
 }
 
-
-
-/* =========================
-   Terminal Body
-   ========================= */
-
 .terminal-body {
     padding: 30px;
 
@@ -246,11 +203,6 @@
     color: #E6EDF3;
 }
 
-
-/* =========================
-   Code Lines
-   ========================= */
-
 .code-line {
     white-space: nowrap;
 }
@@ -258,11 +210,6 @@
 .code-line.indent {
     padding-left: 30px;
 }
-
-
-/* =========================
-   Portfolio Code Colors
-   ========================= */
 
 .keyword {
     color: #00D9A3;

@@ -1,22 +1,10 @@
-/* =========================
-   Contact Section
-   ========================= */
-
 .contact {
     padding: 90px 4.8% 30px;
-
     background:
-        radial-gradient(
-            circle at 0% 10%,
+        radial-gradient(circle at 0% 10%,
             rgba(0, 217, 163, 0.08),
-            transparent 50%
-        );
+            transparent 50%);
 }
-
-
-/* =========================
-   Contact Container
-   ========================= */
 
 .contact-container {
     display: flex;
@@ -24,122 +12,67 @@
     align-items: center;
 }
 
-
-/* =========================
-   Contact Heading
-   ========================= */
-
 .contact h2 {
     color: #E6EDF3;
-
     font-size: 32px;
     font-weight: 700;
-
     text-align: center;
-
     margin-bottom: 15px;
 }
 
-
-/* =========================
-   Contact Description
-   ========================= */
-
 .contact-description {
     color: #8B949E;
-
     font-size: 1.4rem;
     font-weight: 400;
-
     line-height: 1.5;
-
     text-align: center;
-
     margin-bottom: 20px;
 }
-
-
-/* =========================
-   Contact Form
-   ========================= */
 
 .contact-form {
     width: 100%;
     max-width: 750px;
-
     background-color: #0D1117;
     border-radius: 10px;
-
     padding: 30px 30px;
-
     display: flex;
     flex-direction: column;
     gap: 18px;
 }
 
-/* =========================
-   Form Row
-   ========================= */
-
 .form-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     gap: 20px;
 }
-
-
-/* =========================
-   Form Group
-   ========================= */
 
 .form-group {
     display: flex;
     flex-direction: column;
 }
 
-
-/* =========================
-   Labels
-   ========================= */
-
 .form-group label {
     color: #E6EDF3;
-
     font-size: 1rem;
     font-weight: 500;
-
     margin-bottom: 9px;
 }
-
-
-/* =========================
-   Inputs & Textarea
-   ========================= */
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-
     padding: 13px 15px;
-
     border: 1px solid #30363D;
     border-radius: 7px;
-
     background-color: transparent;
-
     color: #E6EDF3;
-
     font-family: 'Space Grotesk', sans-serif;
     font-size: 0.95rem;
-
     outline: none;
-
     transition:
         border-color 0.3s ease,
         box-shadow 0.3s ease;
 }
-
 
 .form-group textarea {
     resize: none;
@@ -160,24 +93,15 @@
     border-radius: 10px;
     cursor: pointer;
 }
-/* =========================
-   Placeholder
-   ========================= */
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
     color: #8B949E;
 }
 
-
-/* =========================
-   Input Focus
-   ========================= */
-
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: #00D9A3;
-
     box-shadow:
         0 0 0 2px rgba(0, 217, 163, 0.08);
 }
