@@ -1,7 +1,5 @@
 .about {
-    padding: 110px 0;
-    padding-left: 4.8%;
-    padding-right: 4.8%;
+    padding: 110px 4.8%;
     background:
         radial-gradient(circle at 0% 10%,
             rgba(0, 217, 163, 0.08),

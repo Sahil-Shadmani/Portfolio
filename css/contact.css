@@ -1,5 +1,5 @@
 .contact {
-    padding: 90px 4.8% 30px;
+    padding: 110px 4.8% 30px;
     background:
         radial-gradient(circle at 0% 10%,
             rgba(0, 217, 163, 0.08),
@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: -25px;
+    margin-bottom: 20px;
 }
 
 .contact h2 {
