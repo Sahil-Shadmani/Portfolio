@@ -11,7 +11,7 @@
 .footer-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -22,13 +22,13 @@
 .footer-socials {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 20px;
 }
 
 .footer-social {
     color: #8B949E;
-    font-size: 1.25rem;
-
+    font-size: 1.4rem;
+    text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +40,7 @@
 
 .footer-social:hover {
     color: #00D9A3;
-    transform: translateY(-2px);
+    
 }
 
 
@@ -55,37 +55,12 @@
 .footer-info p {
     margin: 0;
     color: #8B949E;
-    font-size: 0.9rem;
+    font-size: .9rem;
     line-height: 1.7;
+    text-align: center;
 }
 
 .footer-info p:first-child {
     color: #E6EDF3;
-}
-
-
-/* =========================
-   Mobile
-   ========================= */
-
-@media (max-width: 768px) {
-
-    .footer {
-        padding: 25px 6%;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        gap: 18px;
-        text-align: center;
-    }
-
-    .footer-socials {
-        gap: 25px;
-    }
-
-    .footer-info {
-        text-align: center;
-    }
-
+    font-size: 1.1rem;
 }

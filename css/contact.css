@@ -1,0 +1,229 @@
+/* =========================
+   Contact Section
+   ========================= */
+
+.contact {
+    padding: 110px 4.8%;
+
+    background:
+        radial-gradient(
+            circle at 0% 10%,
+            rgba(0, 217, 163, 0.08),
+            transparent 50%
+        );
+}
+
+
+/* =========================
+   Contact Container
+   ========================= */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================
+   Contact Heading
+   ========================= */
+
+.contact h2 {
+    color: #E6EDF3;
+
+    font-size: 32px;
+    font-weight: 700;
+
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   Contact Description
+   ========================= */
+
+.contact-description {
+    color: #8B949E;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   Contact Form
+   ========================= */
+
+.contact-form {
+    width: 100%;
+    max-width: 750px;
+
+    border: 1px solid #30363D;
+    border-radius: 10px;
+
+    padding: 35px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.contact-form:focus-within {
+    border-color: rgba(0, 217, 163, 0.5);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.15),
+        0 0 25px rgba(0, 217, 163, 0.04);
+}
+
+
+/* =========================
+   Form Row
+   ========================= */
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================
+   Form Group
+   ========================= */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   Labels
+   ========================= */
+
+.form-group label {
+    color: #E6EDF3;
+
+    font-size: 1rem;
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   Inputs & Textarea
+   ========================= */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #30363D;
+    border-radius: 7px;
+
+    background-color: transparent;
+
+    color: #E6EDF3;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.95rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+
+/* =========================
+   Placeholder
+   ========================= */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #8B949E;
+}
+
+
+/* =========================
+   Input Focus
+   ========================= */
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #00D9A3;
+
+    box-shadow:
+        0 0 0 2px rgba(0, 217, 163, 0.08);
+}
+
+
+/* =========================
+   Submit Button
+   ========================= */
+
+.contact-btn {
+    align-self: center;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    padding: 13px 24px;
+
+    border: 1px solid #00D9A3;
+    border-radius: 7px;
+
+    background-color: #00D9A3;
+    color: #0D1117;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.contact-btn:hover {
+    background-color: transparent;
+    color: #00D9A3;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 18px rgba(0, 217, 163, 0.12);
+}
