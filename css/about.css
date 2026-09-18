@@ -1,15 +1,18 @@
 .about {
     padding: 110px 4.8%;
     background:
-        radial-gradient(circle at 0% 10%,
-            rgba(0, 217, 163, 0.08),
-            transparent 50%);
+        radial-gradient(circle at 0% 100%,
+            rgba(0, 217, 163, 0.06),
+            transparent 40%),
+            radial-gradient(circle at 100% 0%,
+            rgba(0, 217, 163, 0.06),
+            transparent 40%);
 }
 
 .about h2 {
     color: #E6EDF3;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2.3rem;
+    font-weight: 600;
     margin-bottom: 25px;
 }
 
@@ -25,8 +28,8 @@
 .education-heading {
     text-align: start;
     color: #E6EDF3;
-    font-size: 2.1rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 500;
     margin-bottom: 30px;
 }
 
