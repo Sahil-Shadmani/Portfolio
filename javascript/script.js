@@ -22,7 +22,6 @@ function showToast(message, type = "") {
 }
 
 
-// Resume button
 const resumeBtn = document.getElementById("resume-btn");
 
 resumeBtn.addEventListener("click", (event) => {
@@ -31,7 +30,6 @@ resumeBtn.addEventListener("click", (event) => {
 });
 
 
-// Projects button
 const projectsBtn = document.getElementById("projects-btn");
 
 projectsBtn.addEventListener("click", (event) => {
@@ -40,7 +38,6 @@ projectsBtn.addEventListener("click", (event) => {
 });
 
 
-// Explore My Work button
 const exploreWorkBtn = document.getElementById("explore-work-btn");
 
 exploreWorkBtn.addEventListener("click", (event) => {
@@ -49,7 +46,6 @@ exploreWorkBtn.addEventListener("click", (event) => {
 });
 
 
-// Contact form - EmailJS
 const contactForm = document.querySelector(".contact-form");
 
 contactForm.addEventListener("submit", (event) => {

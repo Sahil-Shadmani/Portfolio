@@ -1,10 +1,10 @@
 .contact {
     padding: 110px 4.8% 30px;
-   background:
+    background:
         radial-gradient(circle at 0% 100%,
             rgba(0, 217, 163, 0.06),
             transparent 40%),
-             radial-gradient(circle at 100% 0%,
+        radial-gradient(circle at 100% 0%,
             rgba(0, 217, 163, 0.06),
             transparent 40%);
 }
@@ -111,8 +111,7 @@
 .form-group input:focus,
 .form-group textarea:focus {
     border-color: #00D9A3;
-    box-shadow:
-        0 0 0 2px rgba(0, 217, 163, 0.08);
+    box-shadow: 0 0 0 2px rgba(0, 217, 163, 0.08);
 }
 
 .contact-form .primary-btn {

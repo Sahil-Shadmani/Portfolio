@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     padding-top: 75px;
-      background:
+    background:
         radial-gradient(circle at 0% 100%,
             rgba(0, 217, 163, 0.06),
             transparent 40%);
@@ -60,24 +60,18 @@
     align-items: center;
     justify-content: center;
     gap: 9px;
-
     background-color: #00D9A3;
     color: #0D1117;
-
     border: 1px solid #00D9A3;
     border-radius: 6px;
-
     text-decoration: none;
     font-family: 'Space Grotesk', sans-serif;
     font-size: .8rem;
     font-weight: 600;
-
     padding: 14px 28px;
-
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
-
     transition: all 0.3s ease;
 }
 
@@ -214,11 +208,9 @@
 
 .terminal-body {
     padding: 30px;
-
     font-family: 'Space Grotesk', sans-serif;
     font-size: 1rem;
     line-height: 2;
-
     color: #E6EDF3;
 }
 

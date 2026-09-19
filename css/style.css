@@ -15,12 +15,15 @@ body {
     color: #E6EDF3;
     font-family: 'Space Grotesk', sans-serif;
 }
+
 #about {
     scroll-margin-top: 55px;
 }
-#skills{
+
+#skills {
     scroll-margin-top: -12px;
 }
+
 .toast {
     position: fixed;
     bottom: 30px;
