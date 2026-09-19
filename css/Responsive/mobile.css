@@ -1,14 +1,4 @@
-/* =========================================================
-   MOBILE RESPONSIVE CSS
-   Screens: 767px and below
-   ========================================================= */
-
 @media (max-width: 767px) {
-
-
-    /* =====================================================
-       GLOBAL
-       ===================================================== */
 
     .container {
         width: 88%;
@@ -21,11 +11,6 @@
     #skills {
         scroll-margin-top: 70px;
     }
-
-
-/* =====================================================
-   MOBILE NAVBAR
-   ===================================================== */
 
     .navbar {
         position: fixed;
@@ -50,91 +35,71 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
         background: transparent;
         border: none;
         color: #E6EDF3;
-
         font-size: 1.35rem;
         cursor: pointer;
-
         padding: 5px;
     }
 
-.nav-links {
-    position: absolute;
-    top: 52px;
-    right: 0;
+    .nav-links {
+        position: absolute;
+        top: 52px;
+        right: 0;
+        width: 190px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 8px;
+        background-color: #0D1117;
+        border: 1px solid #30363D;
+        border-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(0px);
+        transition:
+            opacity 0.20s ease-out,
+            transform 0.20s ease-out,
+            visibility 0.20s ease-out;
+    }
 
-    width: 190px;
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
 
-    display: flex;
-    flex-direction: column;
+    .nav-links li {
+        width: 100%;
+    }
 
-    gap: 4px;
-    padding: 8px;
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 12px 10px;
+        color: #E6EDF3;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 6px;
+        transition:
+            color 0.2s ease-out,
+            background-color 0.2s ease-out,
+            transform 0.2s ease-out;
+    }
 
-    background-color: #0D1117;
-    border: 1px solid #30363D;
-    border-radius: 8px;
-
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-
-    transform: translateY(0px);
-
-    transition:
-        opacity 0.20s ease-out,
-        transform 0.20s ease-out,
-        visibility 0.20s ease-out;
-}
-.nav-links.active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}
-
-.nav-links li {
-    width: 100%;
-}
-
-.nav-links a {
-    display: block;
-    width: 100%;
-
-    padding: 12px 10px;
-
-    color: #E6EDF3;
-    font-size: 1rem;
-    font-weight: 600;
-
-    text-align: center;
-    text-decoration: none;
-
-    border-radius: 6px;
-
-    transition:
-        color 0.2s ease-out,
-        background-color 0.2s ease-out,
-        transform 0.2s ease-out;
-}
-
-.nav-links a:hover {
-    color: #00D9A3;
-    text-shadow: none;
-}
+    .nav-links a:hover {
+        color: #00D9A3;
+        text-shadow: none;
+    }
 
     .resume-btn {
         display: none;
     }
-
-
-    /* =====================================================
-       HERO
-       ===================================================== */
 
     .hero {
         min-height: auto;
@@ -185,10 +150,10 @@
     }
 
     .hero-buttons .primary-btn,
-.hero-buttons .secondary-btn {
-    width: 180px;
-    height: 40px;
-}
+    .hero-buttons .secondary-btn {
+        width: 180px;
+        height: 40px;
+    }
 
     .social-links {
         gap: 18px;
@@ -205,14 +170,9 @@
         font-size: 1rem;
     }
 
-   .hero-terminal {
-    display: none;
-}
-
-
-    /* =====================================================
-       ABOUT
-       ===================================================== */
+    .hero-terminal {
+        display: none;
+    }
 
     .about {
         padding: 35px 1%;
@@ -282,11 +242,6 @@
         font-size: 1rem;
     }
 
-
-    /* =====================================================
-       SKILLS
-       ===================================================== */
-
     .skills {
         padding: 35px 1%;
     }
@@ -348,16 +303,18 @@
     }
 
     .skill-group.frontend .skill-item:nth-child(4),
-    .skill-group.programming .skill-item:nth-child(2){
+    .skill-group.programming .skill-item:nth-child(2) {
         gap: 12px;
     }
-      .skill-group.programming .skill-item:nth-child(1){
+
+    .skill-group.programming .skill-item:nth-child(1) {
         gap: 6px;
     }
+
     .skill-group.learning .skill-item:last-child {
         gap: 4px;
     }
-    
+
     .skill-group.learning .skill-list.horizontal {
         gap: 22px 30px;
     }
@@ -365,22 +322,18 @@
     .skill-group.learning .skill-item:nth-child(2) {
         transform: none;
     }
+
     .skill-group.tools .skill-list.horizontal {
-    gap: 22px 50px;
-}
+        gap: 22px 50px;
+    }
+
     .skill-group.tools .skill-item {
-    gap: 16px;
-}
-    
+        gap: 16px;
+    }
 
-
-    /* =====================================================
-       CONTACT
-       ===================================================== */
-
-   .contact {
-    padding: 80px 1% 25px;
-}
+    .contact {
+        padding: 80px 1% 25px;
+    }
 
     .contact-container {
         margin-top: 0;
@@ -430,11 +383,6 @@
         align-self: center;
     }
 
-
-    /* =====================================================
-       FOOTER
-       ===================================================== */
-
     .footer {
         padding: 15px 6%;
     }
@@ -465,24 +413,16 @@
         font-size: .9rem;
     }
 
-
-    /* =====================================================
-       TOAST
-       ===================================================== */
-
     .toast {
         width: max-content;
         max-width: 90%;
         text-align: center;
-
         font-size: .85rem;
         padding: 12px 16px;
-
         bottom: 20px;
     }
 
     .toast.contact-toast {
         bottom: 105px;
     }
-
 }
