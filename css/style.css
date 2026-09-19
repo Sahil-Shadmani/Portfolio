@@ -21,3 +21,30 @@ body {
 #skills{
     scroll-margin-top: -12px;
 }
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 20px);
+    background-color: #0D1117;
+    color: #E6EDF3;
+    border: .5px solid #30363d;
+    font-weight: bold;
+    padding: 13px 20px;
+    border-radius: 7px;
+    font-size: 0.95rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 2000;
+}
+
+.toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+}
+
+.toast.contact-toast {
+    bottom: 77px;
+}

@@ -28,12 +28,14 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="project.html" id="projects-btn">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
 
                 <div class="resume">
-                    <a href="#" class="resume-btn"> Get Resume</a>
+                    <button type="button" id="resume-btn" class="resume-btn">
+    Get Resume
+</button>
                 </div>
             </div>
 
@@ -55,24 +57,25 @@
             </p>
 
             <div class="hero-buttons">
-                <a href="#projects" class="primary-btn">Explore My Work
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
+                <button type="button" id="explore-work-btn" class="primary-btn">
+    Explore My Work
+    <i class="fa-solid fa-arrow-right-long"></i>
+</button>
                 <a href="#contact" class="secondary-btn">Contact Me</a>
             </div>
 
             <div class="social-links">
-                <a href="#" class="social-link">
+                <a href="https://github.com/Sahil-Shadmani" target="_blank" rel="noopener noreferrer" class="social-link">
                     <i class="fa-brands fa-github"></i>
                     <span>GitHub</span>
                 </a>
 
-                <a href="#" class="social-link">
+                <a href="https://www.linkedin.com/in/sahilshadmani19" target="_blank" rel="noopener noreferrer" class="social-link">
                     <i class="fa-brands fa-linkedin"></i>
                     <span>LinkedIn</span>
                 </a>
 
-                <a href="#" class="social-link">
+                <a href="mailto:contact.sahilshadmani@gmail.com" class="social-link">
                     <i class="fa-solid fa-envelope"></i>
                     <span>Email</span>
                 </a>
@@ -305,7 +308,7 @@
 
         <div class="container contact-container">
 
-            <h2>Let's Build Something Useful Together</h2>
+            <h2>Let's <span>Build</span> Something Useful <span>Together</span></h2>
 
             <p class="contact-description">
                 Have an idea or opportunity in mind? I'd love to hear from you.
@@ -319,14 +322,14 @@
                     <div class="form-group">
                         <label for="name">Name</label>
 
-                        <input type="text" id="name" name="name" placeholder="Your name">
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
                     </div>
 
 
                     <div class="form-group">
                         <label for="email">Email</label>
 
-                        <input type="email" id="email" name="email" placeholder="Your email">
+                        <input type="email" id="email" name="email" placeholder="Your email" required>
                     </div>
 
                 </div>
@@ -335,7 +338,7 @@
                 <div class="form-group">
                     <label for="subject">Subject</label>
 
-                    <input type="text" id="subject" name="subject" placeholder="Subject">
+                    <input type="text" id="subject" name="subject" placeholder="Subject" required>
                 </div>
 
 
@@ -343,11 +346,11 @@
                     <label for="message">Message</label>
 
                     <textarea id="message" name="message" rows="6"
-                        placeholder="Tell me about your idea or opportunity..."></textarea>
+                        placeholder="Tell me about your idea or opportunity..." required></textarea>
                 </div>
 
 
-                <button type="submit" class="primary-btn">
+                <button type="submit" class="primary-btn" id="send-message-btn">
                     Send Message
                     <i class="fa-solid fa-arrow-right-long"></i>
                 </button>
@@ -365,15 +368,15 @@
 
             <div class="footer-socials">
 
-                <a href="#" class="footer-social" aria-label="GitHub">
+                <a href="https://github.com/Sahil-Shadmani" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
 
-                <a href="#" class="footer-social" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/sahilshadmani19" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn">
                     <i class="fa-brands fa-linkedin-in"></i>
                 </a>
 
-                <a href="#" class="footer-social" aria-label="Email">
+                <a href="mailto:contact.sahilshadmani@gmail.com" class="footer-social" aria-label="Email">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
 
@@ -390,6 +393,18 @@
         </div>
 
     </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+    emailjs.init({
+        publicKey: "w5VzMK-EMvUrXGQEh"
+    });
+</script>
+
+    <script src="/javascript/script.js"></script>
 
 </body>
 

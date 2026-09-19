@@ -60,12 +60,24 @@
     align-items: center;
     justify-content: center;
     gap: 9px;
+
     background-color: #00D9A3;
     color: #0D1117;
+
     border: 1px solid #00D9A3;
     border-radius: 6px;
+
     text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .8rem;
     font-weight: 600;
+
+    padding: 14px 28px;
+
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+
     transition: all 0.3s ease;
 }
 
@@ -109,6 +121,13 @@
 
 .secondary-btn:active {
     transform: translateY(2px);
+}
+
+.resume-btn {
+    appearance: none;
+    -webkit-appearance: none;
+    font-family: 'Space Grotesk', sans-serif;
+    cursor: pointer;
 }
 
 .social-links {

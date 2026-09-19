@@ -25,6 +25,10 @@
     margin-bottom: 15px;
 }
 
+.contact span {
+    color: #00D9A3;
+}
+
 .contact-description {
     color: #8B949E;
     font-size: 1.3rem;
@@ -114,4 +118,5 @@
 .contact-form .primary-btn {
     align-self: center;
     width: fit-content;
+    cursor: pointer;
 }
