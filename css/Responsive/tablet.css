@@ -1,0 +1,416 @@
+/* =========================================================
+   TABLET RESPONSIVE CSS
+   Screens: 768px - 1024px
+   ========================================================= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    /* =====================================================
+       GLOBAL
+       ===================================================== */
+
+    .container {
+        width: 90%;
+    }
+
+    #about {
+        scroll-margin-top: 75px;
+    }
+
+    #skills {
+        scroll-margin-top: 20px;
+    }
+
+
+    /* =====================================================
+       NAVBAR
+       ===================================================== */
+
+    .navbar {
+        padding: 18px 0;
+    }
+
+    .nav-container {
+        width: 90%;
+    }
+
+    .logo img {
+        width: 145px;
+        height: 48px;
+    }
+
+    .nav-right {
+        gap: 25px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .resume-btn {
+        padding: 9px 17px;
+        font-size: .78rem;
+    }
+
+
+    /* =====================================================
+       HERO
+       ===================================================== */
+
+    .hero {
+        min-height: auto;
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    .hero-content {
+        width: 90%;
+        padding: 55px 0 0;
+    }
+
+    .hero-greeting {
+        font-size: 1.2rem;
+        margin-bottom: 14px;
+    }
+
+    .hero h1 {
+        font-size: 3.2rem;
+        line-height: 1.08;
+        margin-bottom: 14px;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    .hero-description {
+        max-width: 500px;
+        font-size: 1.15rem;
+        line-height: 1.55;
+        margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+        gap: 15px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        padding: 13px 23px;
+        font-size: .8rem;
+    }
+
+    .social-links {
+        gap: 20px;
+        margin-top: 32px;
+    }
+
+    .social-link {
+        gap: 9px;
+        font-size: 1rem;
+    }
+
+    .social-link i {
+        font-size: 1.1rem;
+    }
+
+    /*
+       Terminal moves below the Hero content.
+       This prevents the desktop 500px terminal from
+       squeezing the text on a tablet.
+    */
+
+    .hero-terminal {
+        position: static;
+        transform: none;
+
+        width: 90%;
+        max-width: 650px;
+
+        margin: 50px auto 0;
+    }
+
+    .terminal-body {
+        padding: 25px;
+        font-size: .95rem;
+        line-height: 2;
+        overflow-x: auto;
+    }
+
+    .code-line {
+        white-space: nowrap;
+    }
+
+    .code-line.indent {
+        padding-left: 25px;
+    }
+
+
+    /* =====================================================
+       ABOUT
+       ===================================================== */
+
+    .about {
+        padding: 90px 5%;
+    }
+
+    .about h2 {
+        font-size: 2.2rem;
+        margin-bottom: 22px;
+    }
+
+    .about-description {
+        font-size: 1.2rem;
+        line-height: 1.55;
+        margin-bottom: 35px;
+    }
+
+    .education-heading {
+        font-size: 1.9rem;
+        margin-bottom: 28px;
+    }
+
+    .education {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .education-card {
+        padding: 28px;
+        gap: 25px;
+    }
+
+    .education-logo {
+        width: 135px;
+        height: 180px;
+    }
+
+    .school-logo {
+        width: 135px;
+        height: 175px;
+    }
+
+    .education-card h3 {
+        font-size: 1.4rem;
+        line-height: 1.35;
+    }
+
+    .education-meta {
+        font-size: 1.05rem;
+    }
+
+    .education-course {
+        font-size: 1.15rem;
+        line-height: 1.4;
+    }
+
+    .education-date {
+        font-size: 1rem;
+    }
+
+    .education-marks {
+        font-size: 1rem;
+    }
+
+
+    /* =====================================================
+       SKILLS
+       ===================================================== */
+
+    .skills {
+        padding: 90px 5%;
+    }
+
+    .skills h2 {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+
+    .skills-description {
+        font-size: 1.2rem;
+        line-height: 1.55;
+        margin-bottom: 35px;
+    }
+
+    .skills-layout {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+        row-gap: 20px;
+    }
+
+    .skill-group.frontend {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    .skill-group.programming,
+    .skill-group.tools {
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .skill-group.learning {
+        grid-column: 1 / -1;
+        width: 75%;
+        justify-self: center;
+    }
+
+    .skill-group {
+        padding: 25px 18px;
+    }
+
+    .skill-group h3 {
+        font-size: 1.45rem;
+        margin-bottom: 18px;
+        margin-top: -5px;
+    }
+
+    .skill-list {
+        gap: 25px 40px;
+    }
+
+    .skill-list.horizontal {
+        flex-wrap: wrap;
+        gap: 25px 35px;
+    }
+
+    .skill-item {
+        gap: 14px;
+        font-size: 1.05rem;
+    }
+
+    .skill-item img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .skill-group.programming .skill-item:nth-child(2) img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .skill-group.frontend .skill-item:nth-child(4),
+    .skill-group.programming .skill-item:nth-child(2),
+    .skill-group.learning .skill-item:last-child {
+        gap: 14px;
+    }
+
+    .skill-group.learning .skill-list.horizontal {
+        gap: 30px;
+    }
+
+    .skill-group.learning .skill-item:nth-child(2) {
+        transform: none;
+    }
+
+
+    /* =====================================================
+       CONTACT
+       ===================================================== */
+
+    .contact {
+        padding: 90px 5% 30px;
+    }
+
+    .contact-container {
+        margin-top: -10px;
+        margin-bottom: 15px;
+    }
+
+    .contact h2 {
+        font-size: 1.9rem;
+        line-height: 1.35;
+        margin-bottom: 14px;
+    }
+
+    .contact-description {
+        font-size: 1.15rem;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    .contact-form {
+        max-width: 680px;
+        padding: 28px;
+        gap: 18px;
+    }
+
+    .form-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .form-group label {
+        font-size: .95rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px 14px;
+        font-size: .9rem;
+    }
+
+    .form-group textarea {
+        height: 120px;
+    }
+
+    .contact-form .primary-btn {
+        width: fit-content;
+        align-self: center;
+    }
+
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    .footer {
+        padding: 14px 5%;
+    }
+
+    .footer-container {
+        justify-content: space-between;
+    }
+
+    .footer-socials {
+        gap: 18px;
+    }
+
+    .footer-social {
+        font-size: 1.3rem;
+    }
+
+    .footer-info p {
+        font-size: .82rem;
+        line-height: 1.6;
+    }
+
+    .footer-info p:first-child {
+        font-size: 1rem;
+    }
+
+
+    /* =====================================================
+       TOAST
+       ===================================================== */
+
+    .toast {
+        max-width: 80%;
+        text-align: center;
+        font-size: .9rem;
+        padding: 12px 18px;
+        bottom: 25px;
+    }
+
+    .toast.contact-toast {
+        bottom: 70px;
+    }
+
+}

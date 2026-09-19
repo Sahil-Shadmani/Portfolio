@@ -80,3 +80,17 @@ contactForm.addEventListener("submit", (event) => {
             submitButton.style.cursor = "";
         });
 });
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
+navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+        setTimeout(() => {
+            navLinks.classList.remove("active");
+        }, 200);
+    });
+});

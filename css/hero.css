@@ -55,6 +55,12 @@
     gap: 20px;
 }
 
+.hero-buttons .primary-btn,
+.hero-buttons .secondary-btn {
+    width: 200px;
+    height: 50px;
+}
+
 .primary-btn {
     display: inline-flex;
     align-items: center;
@@ -101,7 +107,7 @@
 }
 
 .secondary-btn i {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     transition: transform 0.3s ease;
 }
 

@@ -1,0 +1,488 @@
+/* =========================================================
+   MOBILE RESPONSIVE CSS
+   Screens: 767px and below
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+
+    /* =====================================================
+       GLOBAL
+       ===================================================== */
+
+    .container {
+        width: 88%;
+    }
+
+    #about {
+        scroll-margin-top: 70px;
+    }
+
+    #skills {
+        scroll-margin-top: 70px;
+    }
+
+
+/* =====================================================
+   MOBILE NAVBAR
+   ===================================================== */
+
+    .navbar {
+        position: fixed;
+        padding: 15px 0;
+    }
+
+    .nav-container {
+        width: 88%;
+    }
+
+    .logo img {
+        width: 135px;
+        height: 45px;
+    }
+
+    .nav-right {
+        position: relative;
+        gap: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: transparent;
+        border: none;
+        color: #E6EDF3;
+
+        font-size: 1.35rem;
+        cursor: pointer;
+
+        padding: 5px;
+    }
+
+.nav-links {
+    position: absolute;
+    top: 52px;
+    right: 0;
+
+    width: 190px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+    padding: 8px;
+
+    background-color: #0D1117;
+    border: 1px solid #30363D;
+    border-radius: 8px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateY(0px);
+
+    transition:
+        opacity 0.20s ease-out,
+        transform 0.20s ease-out,
+        visibility 0.20s ease-out;
+}
+.nav-links.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.nav-links li {
+    width: 100%;
+}
+
+.nav-links a {
+    display: block;
+    width: 100%;
+
+    padding: 12px 10px;
+
+    color: #E6EDF3;
+    font-size: 1rem;
+    font-weight: 600;
+
+    text-align: center;
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    transition:
+        color 0.2s ease-out,
+        background-color 0.2s ease-out,
+        transform 0.2s ease-out;
+}
+
+.nav-links a:hover {
+    color: #00D9A3;
+    text-shadow: none;
+}
+
+    .resume-btn {
+        display: none;
+    }
+
+
+    /* =====================================================
+       HERO
+       ===================================================== */
+
+    .hero {
+        min-height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 65px 7% 0;
+    }
+
+    .hero-greeting {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+        line-height: 1.1;
+        margin-bottom: 12px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+        line-height: 1.25;
+        margin-bottom: 28px;
+    }
+
+    .hero-description {
+        max-width: 100%;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        padding: 10px;
+        font-size: .75rem;
+    }
+
+    .hero-buttons .primary-btn,
+.hero-buttons .secondary-btn {
+    width: 180px;
+    height: 40px;
+}
+
+    .social-links {
+        gap: 18px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+
+    .social-link {
+        gap: 8px;
+        font-size: .8rem;
+    }
+
+    .social-link i {
+        font-size: 1rem;
+    }
+
+   .hero-terminal {
+    display: none;
+}
+
+
+    /* =====================================================
+       ABOUT
+       ===================================================== */
+
+    .about {
+        padding: 35px 1%;
+    }
+
+    .about h2 {
+        font-size: 1.9rem;
+        margin-bottom: 20px;
+    }
+
+    .about-description {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        margin-bottom: 35px;
+    }
+
+    .education-heading {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+
+    .education {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .education-card {
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .education-logo,
+    .school-logo {
+        width: 100px;
+        height: 130px;
+    }
+
+    .education-details {
+        width: 100%;
+        text-align: center;
+    }
+
+    .education-card h3 {
+        margin-top: -15px;
+        font-size: 1.2rem;
+        line-height: 1.4;
+        margin-bottom: 8px;
+    }
+
+    .education-meta {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .education-course {
+        font-size: 1.05rem;
+        line-height: 1.4;
+    }
+
+    .education-date {
+        font-size: .95rem;
+    }
+
+    .education-marks {
+        font-size: 1rem;
+    }
+
+
+    /* =====================================================
+       SKILLS
+       ===================================================== */
+
+    .skills {
+        padding: 35px 1%;
+    }
+
+    .skills h2 {
+        font-size: 1.9rem;
+        margin-bottom: 18px;
+    }
+
+    .skills-description {
+        font-size: 1.05rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+    }
+
+    .skills-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .skill-group.frontend,
+    .skill-group.programming,
+    .skill-group.tools,
+    .skill-group.learning {
+        grid-column: auto;
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .skill-group {
+        padding: 22px 18px;
+    }
+
+    .skill-group h3 {
+        font-size: 1.3rem;
+        margin-bottom: 18px;
+        margin-top: 0;
+    }
+
+    .skill-list,
+    .skill-list.horizontal {
+        flex-wrap: wrap;
+        gap: 22px 30px;
+    }
+
+    .skill-item {
+        gap: 12px;
+        font-size: .9rem;
+    }
+
+    .skill-item img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .skill-group.programming .skill-item:nth-child(2) img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .skill-group.frontend .skill-item:nth-child(4),
+    .skill-group.programming .skill-item:nth-child(2){
+        gap: 12px;
+    }
+      .skill-group.programming .skill-item:nth-child(1){
+        gap: 6px;
+    }
+    .skill-group.learning .skill-item:last-child {
+        gap: 4px;
+    }
+    
+    .skill-group.learning .skill-list.horizontal {
+        gap: 22px 30px;
+    }
+
+    .skill-group.learning .skill-item:nth-child(2) {
+        transform: none;
+    }
+    .skill-group.tools .skill-list.horizontal {
+    gap: 22px 50px;
+}
+    .skill-group.tools .skill-item {
+    gap: 16px;
+}
+    
+
+
+    /* =====================================================
+       CONTACT
+       ===================================================== */
+
+   .contact {
+    padding: 80px 1% 25px;
+}
+
+    .contact-container {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .contact h2 {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        margin-bottom: 12px;
+    }
+
+    .contact-description {
+        font-size: 1.05rem;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    .contact-form {
+        width: 100%;
+        padding: 22px 18px;
+        gap: 17px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    .form-group label {
+        font-size: .95rem;
+        margin-bottom: 8px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px 13px;
+        font-size: .9rem;
+    }
+
+    .form-group textarea {
+        height: 120px;
+    }
+
+    .contact-form .primary-btn {
+        width: 150px;
+        align-self: center;
+    }
+
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    .footer {
+        padding: 15px 6%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-socials {
+        gap: 18px;
+    }
+
+    .footer-social {
+        font-size: 1.15rem;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+
+    .footer-info p {
+        font-size: .75rem;
+        line-height: 1.6;
+    }
+
+    .footer-info p:first-child {
+        font-size: .9rem;
+    }
+
+
+    /* =====================================================
+       TOAST
+       ===================================================== */
+
+    .toast {
+        width: max-content;
+        max-width: 90%;
+        text-align: center;
+
+        font-size: .85rem;
+        padding: 12px 16px;
+
+        bottom: 20px;
+    }
+
+    .toast.contact-toast {
+        bottom: 105px;
+    }
+
+}
