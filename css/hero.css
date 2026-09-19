@@ -81,14 +81,28 @@
 }
 
 .secondary-btn {
-    display: inline-block;
+    display: inline-flex;
+    gap: 9px;
+    align-items: center;
+    justify-content: center;
     background-color: transparent;
     color: #E6EDF3;
     border: 1px solid #30363D;
     border-radius: 6px;
     text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: .8rem;
     font-weight: 600;
+    padding: 14px 28px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
     transition: all 0.3s ease;
+}
+
+.secondary-btn i {
+    font-size: 0.85rem;
+    transition: transform 0.3s ease;
 }
 
 .primary-btn:hover {
