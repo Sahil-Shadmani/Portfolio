@@ -5,11 +5,11 @@
     }
 
     #about {
-        scroll-margin-top: 75px;
+        scroll-margin-top: 40px;
     }
 
     #skills {
-        scroll-margin-top: 20px;
+        scroll-margin-top: 16px;
     }
 
     .navbar {
@@ -37,20 +37,16 @@
         font-size: 1rem;
     }
 
-    .resume-btn {
-        padding: 9px 17px;
-        font-size: .78rem;
-    }
-
     .hero {
         min-height: auto;
-        padding-top: 100px;
-        padding-bottom: 70px;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
     .hero-content {
         width: 90%;
         padding: 55px 0 0;
+        padding-left: 5%;
     }
 
     .hero-greeting {
@@ -84,7 +80,7 @@
     .primary-btn,
     .secondary-btn {
         padding: 13px 23px;
-        font-size: .8rem;
+        font-size: .9rem;
     }
 
     .social-links {
@@ -102,18 +98,7 @@
     }
 
     .hero-terminal {
-        position: static;
-        transform: none;
-        width: 90%;
-        max-width: 650px;
-        margin: 50px auto 0;
-    }
-
-    .terminal-body {
-        padding: 25px;
-        font-size: .95rem;
-        line-height: 2;
-        overflow-x: auto;
+        display: none;
     }
 
     .code-line {
@@ -218,10 +203,11 @@
         justify-self: stretch;
     }
 
+
     .skill-group.learning {
         grid-column: 1 / -1;
-        width: 75%;
-        justify-self: center;
+        width: auto;
+        justify-self: stretch;
     }
 
     .skill-group {
@@ -233,6 +219,17 @@
         margin-bottom: 18px;
         margin-top: -5px;
     }
+
+    .skill-group.tools h3 {
+        max-width: 160px;
+        align-self: center;
+    }
+
+    .skill-group.programming h3 {
+        max-width: 160px;
+        align-self: center;
+    }
+
 
     .skill-list {
         gap: 25px 40px;
@@ -259,17 +256,44 @@
     }
 
     .skill-group.frontend .skill-item:nth-child(4),
-    .skill-group.programming .skill-item:nth-child(2),
-    .skill-group.learning .skill-item:last-child {
+    .skill-group.programming .skill-item:nth-child(2) {
         gap: 14px;
+    }
+
+    .skill-group.learning .skill-item:last-child {
+        gap: 6px;
     }
 
     .skill-group.learning .skill-list.horizontal {
         gap: 30px;
     }
 
+    .skill-group.learning .skill-item:nth-child(1) {
+        margin-right: 15px;
+    }
+
     .skill-group.learning .skill-item:nth-child(2) {
         transform: none;
+    }
+
+    .skill-group.programming .skill-list {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .skill-group.tools .skill-list.horizontal {
+        justify-content: space-evenly;
+        gap: 25px;
+    }
+
+    .skill-group.frontend .skill-list {
+        justify-content: space-evenly;
+        gap: 35px;
+    }
+
+    .skill-group.learning .skill-list.horizontal {
+        justify-content: space-evenly;
+        gap: 25px;
     }
 
     .contact {
@@ -277,7 +301,7 @@
     }
 
     .contact-container {
-        margin-top: -10px;
+        margin-top: -20px;
         margin-bottom: 15px;
     }
 
@@ -357,6 +381,6 @@
     }
 
     .toast.contact-toast {
-        bottom: 70px;
+        bottom: 78px;
     }
 }

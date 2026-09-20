@@ -56,18 +56,18 @@
 }
 
 .skill-group.programming {
-    width: 540px;
+    width: 90%;
     justify-self: end;
 }
 
 .skill-group.tools {
-    width: 540px;
+    width: 90%;
     justify-self: start;
 }
 
 .skill-group.learning {
     grid-column: 1 / -1;
-    width: 780px;
+    width: 65%;
     justify-self: center;
 }
 
