@@ -1,0 +1,487 @@
+/* =========================================================
+   SMALL DESKTOP RESPONSIVE CSS
+   Screens: 1025px - 1420px
+   ========================================================= */
+
+@media (min-width: 1025px) and (max-width: 1420px) {
+
+    /* =====================================================
+       GLOBAL
+       ===================================================== */
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #about {
+        scroll-margin-top: 70px;
+    }
+
+    #skills {
+        scroll-margin-top: 20px;
+    }
+
+
+    /* =====================================================
+       NAVBAR
+       ===================================================== */
+
+    .navbar {
+        padding: 18px 0;
+    }
+
+    .nav-container {
+        width: 90%;
+    }
+
+    .logo img {
+        width: 155px;
+        height: 50px;
+    }
+
+    .nav-right {
+        gap: 30px;
+    }
+
+    .nav-links {
+        gap: 26px;
+    }
+
+    .nav-links a {
+        font-size: 1.08rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+
+    /* =====================================================
+       HERO
+       ===================================================== */
+
+    .hero {
+        min-height: 100vh;
+        padding-top: 75px;
+        padding-bottom: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 4.8%;
+    }
+
+    /*
+       Terminal is intentionally hidden in small desktop.
+       This prevents the overlap/collapse that happens
+       between 1025px and 1420px.
+    */
+    .hero-terminal {
+        display: none;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 4.8%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-greeting {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+    }
+
+    .hero h1 {
+        font-size: clamp(3.2rem, 4vw, 4rem);
+        line-height: 1.05;
+        margin-bottom: 15px;
+    }
+
+    .hero h2 {
+        font-size: clamp(2.25rem, 3vw, 2.8rem);
+        line-height: 1.2;
+        margin-bottom: 32px;
+    }
+
+    .hero-description {
+        max-width: 600px;
+        font-size: 1.25rem;
+        line-height: 1.55;
+        margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+        gap: 20px;
+    }
+
+    .hero-buttons .primary-btn,
+    .hero-buttons .secondary-btn {
+        width: 200px;
+        height: 50px;
+    }
+
+    .social-links {
+        gap: 24px;
+        margin-top: 35px;
+    }
+
+    .social-link {
+        gap: 10px;
+        font-size: 1.05rem;
+    }
+
+    .social-link i {
+        font-size: 1.15rem;
+    }
+
+
+    /* =====================================================
+       ABOUT
+       ===================================================== */
+
+    .about {
+        padding: 100px 4.8%;
+    }
+
+    .about h2 {
+        font-size: 2.25rem;
+        margin-bottom: 23px;
+    }
+
+    .about-description {
+        max-width: 100%;
+        font-size: 1.25rem;
+        line-height: 1.55;
+        margin-bottom: 35px;
+    }
+
+    .education-heading {
+        font-size: 1.95rem;
+        margin-bottom: 28px;
+    }
+
+    .education {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .education-card {
+        padding: 24px;
+        gap: 22px;
+        min-width: 0;
+    }
+
+    .education-logo {
+        width: 120px;
+        height: 165px;
+    }
+
+    .school-logo {
+        width: 120px;
+        height: 155px;
+    }
+
+    .education-details {
+        min-width: 0;
+    }
+
+    .education-card h3 {
+        font-size: 1.3rem;
+        line-height: 1.35;
+        margin-bottom: 9px;
+    }
+
+    .education-meta {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .education-course {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+
+    .education-date {
+        font-size: .95rem;
+    }
+
+    .education-marks {
+        font-size: 1rem;
+    }
+
+
+    /* =====================================================
+       SKILLS
+       ===================================================== */
+
+    .skills {
+        padding: 100px 4.8%;
+    }
+
+    .skills h2 {
+        font-size: 2.25rem;
+        margin-bottom: 20px;
+    }
+
+    .skills-description {
+        max-width: 100%;
+        font-size: 1.25rem;
+        line-height: 1.55;
+        margin-bottom: 38px;
+    }
+
+    .skills-layout {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 15px;
+        row-gap: 20px;
+    }
+
+
+    /* ---------- Frontend ---------- */
+
+    .skill-group.frontend {
+        grid-column: 1 / -1;
+        width: 100%;
+        justify-self: stretch;
+    }
+
+
+    /* ---------- Programming & Database ---------- */
+
+    .skill-group.programming {
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .skill-group.programming .skill-list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+    }
+
+
+    /* ---------- Tools & Workflow ---------- */
+
+    .skill-group.tools {
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .skill-group.tools .skill-list.horizontal {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 25px 35px;
+    }
+
+
+    /* ---------- Currently Learning ---------- */
+
+    .skill-group.learning {
+        grid-column: 1 / -1;
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .skill-group.learning .skill-list.horizontal {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 25px 45px;
+    }
+
+
+    /* ---------- Common Skill Card ---------- */
+
+    .skill-group {
+        padding: 28px 24px;
+        min-width: 0;
+    }
+
+    .skill-group h3 {
+        font-size: 1.5rem;
+        margin-bottom: 22px;
+        margin-top: -5px;
+        text-align: center;
+    }
+
+    .skill-group.programming h3,
+    .skill-group.tools h3 {
+        max-width: 190px;
+        align-self: center;
+    }
+
+    .skill-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 25px 35px;
+    }
+
+    .skill-list.horizontal {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 25px 35px;
+    }
+
+    .skill-item {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 1.05rem;
+        white-space: nowrap;
+    }
+
+    .skill-item img {
+        width: 58px;
+        height: 58px;
+        object-fit: contain;
+    }
+
+
+    /* ---------- Individual Logo Adjustments ---------- */
+
+    .skill-group.programming .skill-item:nth-child(2) img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .skill-group.frontend .skill-item:nth-child(4) {
+        gap: 18px;
+    }
+
+    .skill-group.programming .skill-item:nth-child(2) {
+        gap: 14px;
+    }
+
+    .skill-group.learning .skill-item:last-child {
+        gap: 6px;
+    }
+
+    .skill-group.learning .skill-item:nth-child(2) {
+        transform: none;
+    }
+
+    /* Tools & Workflow */
+.skill-group.tools .skill-list.horizontal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.skill-group.tools .skill-item:nth-child(3) {
+    grid-column: 1 / -1;
+}
+
+    /* =====================================================
+       CONTACT
+       ===================================================== */
+
+    .contact {
+        padding: 100px 4.8% 30px;
+    }
+
+    .contact-container {
+        margin-top: -15px;
+        margin-bottom: 20px;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+        line-height: 1.35;
+        margin-bottom: 15px;
+    }
+
+    .contact-description {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+    .contact-form {
+        width: 100%;
+        max-width: 750px;
+        padding: 30px;
+        gap: 18px;
+    }
+
+    .form-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 13px 15px;
+        font-size: .95rem;
+    }
+
+    .form-group textarea {
+        height: 120px;
+    }
+
+    .contact-form .primary-btn {
+        width: fit-content;
+        align-self: center;
+    }
+
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    .footer {
+        padding: 10px 4.8%;
+    }
+
+    .footer-container {
+        justify-content: space-around;
+    }
+
+    .footer-socials {
+        gap: 20px;
+    }
+
+    .footer-social {
+        font-size: 1.35rem;
+    }
+
+    .footer-info p {
+        font-size: .88rem;
+        line-height: 1.7;
+    }
+
+    .footer-info p:first-child {
+        font-size: 1.05rem;
+    }
+
+
+    /* =====================================================
+       TOAST
+       ===================================================== */
+
+    .toast {
+        max-width: 80%;
+        text-align: center;
+        font-size: .9rem;
+        padding: 12px 18px;
+        bottom: 25px;
+    }
+
+    .toast.contact-toast {
+        bottom: 78px;
+    }
+}
