@@ -3,7 +3,7 @@
    Screens: 1025px - 1420px
    ========================================================= */
 
-@media (min-width: 1025px) and (max-width: 1420px) {
+@media (min-width: 1025px) and (max-width: 1435px) {
 
     /* =====================================================
        GLOBAL
@@ -63,30 +63,23 @@
 
     .hero {
         min-height: 100vh;
-        padding-top: 75px;
+        padding-top: 120px;
         padding-bottom: 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         padding-left: 4.8%;
     }
 
-    /*
-       Terminal is intentionally hidden in small desktop.
-       This prevents the overlap/collapse that happens
-       between 1025px and 1420px.
-    */
     .hero-terminal {
-        display: none;
+        display: block;
+        position: absolute;
+        top: 53%;
+        right: 9%;
+        transform: translateY(-50%);
+        width: clamp(330px, 34vw, 470px);
     }
 
     .hero-content {
         width: 100%;
         padding: 4.8%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .hero-greeting {
@@ -483,5 +476,42 @@
 
     .toast.contact-toast {
         bottom: 78px;
+    }
+}
+/* =========================================
+   SMALL DESKTOP - HERO ADJUSTMENTS
+   ========================================= */
+
+/* 1025px - 1100px
+   Hide terminal and center hero content */
+@media (min-width: 1025px) and (max-width: 1220px) {
+
+    .hero-terminal {
+        display: none;
+    }
+
+    .hero {
+        justify-content: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 4.8%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-description {
+        max-width: 650px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
     }
 }
