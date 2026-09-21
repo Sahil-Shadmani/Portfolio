@@ -1,13 +1,6 @@
-/* =========================================================
-   SMALL DESKTOP RESPONSIVE CSS
-   Screens: 1025px - 1420px
-   ========================================================= */
-
 @media (min-width: 1025px) and (max-width: 1435px) {
 
-    /* =====================================================
-       GLOBAL
-       ===================================================== */
+    /* Global */
 
     .container {
         width: 90%;
@@ -22,10 +15,7 @@
         scroll-margin-top: 20px;
     }
 
-
-    /* =====================================================
-       NAVBAR
-       ===================================================== */
+    /* Navbar */
 
     .navbar {
         padding: 18px 0;
@@ -56,10 +46,7 @@
         display: none;
     }
 
-
-    /* =====================================================
-       HERO
-       ===================================================== */
+    /* Hero */
 
     .hero {
         min-height: 100vh;
@@ -130,10 +117,7 @@
         font-size: 1.15rem;
     }
 
-
-    /* =====================================================
-       ABOUT
-       ===================================================== */
+    /* About */
 
     .about {
         padding: 100px 4.8%;
@@ -205,10 +189,7 @@
         font-size: 1rem;
     }
 
-
-    /* =====================================================
-       SKILLS
-       ===================================================== */
+    /* Skills */
 
     .skills {
         padding: 100px 4.8%;
@@ -233,17 +214,11 @@
         row-gap: 20px;
     }
 
-
-    /* ---------- Frontend ---------- */
-
     .skill-group.frontend {
         grid-column: 1 / -1;
         width: 100%;
         justify-self: stretch;
     }
-
-
-    /* ---------- Programming & Database ---------- */
 
     .skill-group.programming {
         width: 100%;
@@ -258,9 +233,6 @@
         gap: 28px;
     }
 
-
-    /* ---------- Tools & Workflow ---------- */
-
     .skill-group.tools {
         width: 100%;
         justify-self: stretch;
@@ -272,9 +244,6 @@
         align-items: center;
         gap: 25px 35px;
     }
-
-
-    /* ---------- Currently Learning ---------- */
 
     .skill-group.learning {
         grid-column: 1 / -1;
@@ -288,9 +257,6 @@
         align-items: center;
         gap: 25px 45px;
     }
-
-
-    /* ---------- Common Skill Card ---------- */
 
     .skill-group {
         padding: 28px 24px;
@@ -338,9 +304,6 @@
         object-fit: contain;
     }
 
-
-    /* ---------- Individual Logo Adjustments ---------- */
-
     .skill-group.programming .skill-item:nth-child(2) img {
         width: 64px;
         height: 64px;
@@ -362,22 +325,19 @@
         transform: none;
     }
 
-    /* Tools & Workflow */
-.skill-group.tools .skill-list.horizontal {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
-    row-gap: 25px;
-}
+    .skill-group.tools .skill-list.horizontal {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        row-gap: 25px;
+    }
 
-.skill-group.tools .skill-item:nth-child(3) {
-    grid-column: 1 / -1;
-}
+    .skill-group.tools .skill-item:nth-child(3) {
+        grid-column: 1 / -1;
+    }
 
-    /* =====================================================
-       CONTACT
-       ===================================================== */
+    /* Contact */
 
     .contact {
         padding: 100px 4.8% 30px;
@@ -431,10 +391,7 @@
         align-self: center;
     }
 
-
-    /* =====================================================
-       FOOTER
-       ===================================================== */
+    /* Footer */
 
     .footer {
         padding: 10px 4.8%;
@@ -461,10 +418,7 @@
         font-size: 1.05rem;
     }
 
-
-    /* =====================================================
-       TOAST
-       ===================================================== */
+    /* Toast Message */
 
     .toast {
         max-width: 80%;
@@ -478,12 +432,7 @@
         bottom: 78px;
     }
 }
-/* =========================================
-   SMALL DESKTOP - HERO ADJUSTMENTS
-   ========================================= */
 
-/* 1025px - 1100px
-   Hide terminal and center hero content */
 @media (min-width: 1025px) and (max-width: 1220px) {
 
     .hero-terminal {
