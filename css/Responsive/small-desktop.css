@@ -189,153 +189,248 @@
         font-size: 1rem;
     }
 
-    /* Skills */
+/* =========================================
+   SKILLS - SMALL DESKTOP
+   1025px - 1435px
+   ========================================= */
 
-    .skills {
-        padding: 100px 4.8%;
-    }
+.skills {
+    padding: 100px 4.8%;
+}
 
-    .skills h2 {
-        font-size: 2.25rem;
-        margin-bottom: 20px;
-    }
+.skills h2 {
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+}
 
-    .skills-description {
-        max-width: 100%;
-        font-size: 1.25rem;
-        line-height: 1.55;
-        margin-bottom: 38px;
-    }
+.skills-description {
+    max-width: 100%;
+    font-size: 1.25rem;
+    line-height: 1.55;
+    margin-bottom: 38px;
+}
 
-    .skills-layout {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        column-gap: 15px;
-        row-gap: 20px;
-    }
 
-    .skill-group.frontend {
-        grid-column: 1 / -1;
-        width: 100%;
-        justify-self: stretch;
-    }
+/* -----------------------------------------
+   Skills Layout
+   ----------------------------------------- */
 
-    .skill-group.programming {
-        width: 100%;
-        justify-self: stretch;
-    }
+.skills-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 15px;
+    row-gap: 20px;
+}
 
-    .skill-group.programming .skill-list {
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        gap: 28px;
-    }
 
-    .skill-group.tools {
-        width: 100%;
-        justify-self: stretch;
-    }
+/* -----------------------------------------
+   Frontend Development
+   ----------------------------------------- */
 
-    .skill-group.tools .skill-list.horizontal {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 25px 35px;
-    }
+.skill-group.frontend {
+    grid-column: 1 / -1;
+    width: 100%;
+    justify-self: stretch;
+}
 
-    .skill-group.learning {
-        grid-column: 1 / -1;
-        width: 100%;
-        justify-self: stretch;
-    }
 
-    .skill-group.learning .skill-list.horizontal {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 25px 45px;
-    }
+/* Frontend skills stay on ONE line
+   and use equal spacing */
 
-    .skill-group {
-        padding: 28px 24px;
-        min-width: 0;
-    }
+.skill-group.frontend .skill-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 0;
+}
 
-    .skill-group h3 {
-        font-size: 1.5rem;
-        margin-bottom: 22px;
-        margin-top: -5px;
-        text-align: center;
-    }
 
-    .skill-group.programming h3,
-    .skill-group.tools h3 {
-        max-width: 190px;
-        align-self: center;
-    }
+/* -----------------------------------------
+   Programming & Database
+   ----------------------------------------- */
 
-    .skill-list {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        gap: 25px 35px;
-    }
+.skill-group.programming {
+    width: 90%;
+    justify-self: end;
+}
 
-    .skill-list.horizontal {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 25px 35px;
+
+/* -----------------------------------------
+   Tools & Workflow
+   ----------------------------------------- */
+
+.skill-group.tools {
+    width: 90%;
+    justify-self: start;
+}
+
+
+/* -----------------------------------------
+   Currently Learning
+   ----------------------------------------- */
+
+.skill-group.learning {
+    grid-column: 1 / -1;
+    width: 65%;
+    justify-self: center;
+}
+
+
+/* -----------------------------------------
+   Cards
+   ----------------------------------------- */
+
+.skill-group {
+    padding: 28px 24px;
+    min-width: 0;
+}
+
+
+/* -----------------------------------------
+   Headings
+   ----------------------------------------- */
+
+.skill-group h3 {
+    font-size: 1.5rem;
+    margin-bottom: 22px;
+    margin-top: -5px;
+    text-align: center;
+}
+
+
+/* Keep Programming & Tools headings
+   on ONE line */
+
+.skill-group.programming h3,
+.skill-group.tools h3 {
+    max-width: none;
+    white-space: nowrap;
+    align-self: center;
+    text-align: center;
+}
+
+
+/* -----------------------------------------
+   Skill Lists
+   ----------------------------------------- */
+
+.skill-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px 35px;
+}
+
+.skill-list.horizontal {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+
+/* -----------------------------------------
+   Skill Items
+   ----------------------------------------- */
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 1.05rem;
+    white-space: nowrap;
+}
+
+
+/* Skill Icons */
+
+.skill-item img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+}
+
+
+/* MySQL */
+
+.skill-group.programming .skill-item:nth-child(2) img {
+    width: 64px;
+    height: 64px;
+}
+
+
+/* -----------------------------------------
+   Existing Individual Adjustments
+   ----------------------------------------- */
+
+.skill-group.frontend .skill-item:nth-child(4) {
+    gap: 18px;
+}
+
+.skill-group.programming .skill-item:nth-child(2) {
+    gap: 14px;
+}
+
+.skill-group.learning .skill-item:last-child {
+    gap: 6px;
+}
+
+.skill-group.learning .skill-item:nth-child(2) {
+    transform: none;
+}
+
+
+/* -----------------------------------------
+   Tools
+   ----------------------------------------- */
+
+.skill-group.tools .skill-list.horizontal {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+
+/* -----------------------------------------
+   Smaller Small-Desktop
+   1025px - 1100px
+   ----------------------------------------- */
+
+@media (min-width: 1025px) and (max-width: 1275px) {
+
+    /* Tools need slightly less spacing
+       at the narrow end */
+
+     .skill-group.tools .skill-list.horizontal {
+        gap: clamp(15px, 7vw, 15px);
     }
 
     .skill-item {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-        font-size: 1.05rem;
-        white-space: nowrap;
+        gap: 10px;
+        font-size: 1rem;
     }
 
     .skill-item img {
-        width: 58px;
-        height: 58px;
-        object-fit: contain;
+        width: 52px;
+        height: 52px;
     }
 
     .skill-group.programming .skill-item:nth-child(2) img {
-        width: 64px;
-        height: 64px;
+        width: 58px;
+        height: 58px;
     }
 
     .skill-group.frontend .skill-item:nth-child(4) {
-        gap: 18px;
+        gap: 12px;
     }
 
     .skill-group.programming .skill-item:nth-child(2) {
-        gap: 14px;
+        gap: 10px;
     }
-
-    .skill-group.learning .skill-item:last-child {
-        gap: 6px;
-    }
-
-    .skill-group.learning .skill-item:nth-child(2) {
-        transform: none;
-    }
-
-    .skill-group.tools .skill-list.horizontal {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-        align-items: center;
-        row-gap: 25px;
-    }
-
-    .skill-group.tools .skill-item:nth-child(3) {
-        grid-column: 1 / -1;
-    }
+}
 
     /* Contact */
 
