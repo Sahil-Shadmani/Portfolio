@@ -22,6 +22,8 @@ function showToast(message, type = "") {
 }
 
 
+// Resume Button 
+
 const resumeBtn = document.getElementById("resume-btn");
 
 resumeBtn.addEventListener("click", (event) => {
@@ -29,6 +31,8 @@ resumeBtn.addEventListener("click", (event) => {
     showToast("Resume will be available soon!");
 });
 
+
+// Projects Button 
 
 const projectsBtn = document.getElementById("projects-btn");
 
@@ -38,6 +42,8 @@ projectsBtn.addEventListener("click", (event) => {
 });
 
 
+// Explore work Button 
+
 const exploreWorkBtn = document.getElementById("explore-work-btn");
 
 exploreWorkBtn.addEventListener("click", (event) => {
@@ -45,6 +51,8 @@ exploreWorkBtn.addEventListener("click", (event) => {
     showToast("Projects are coming soon — stay tuned!");
 });
 
+
+// Contact form
 
 const contactForm = document.querySelector(".contact-form");
 
@@ -80,6 +88,10 @@ contactForm.addEventListener("submit", (event) => {
             submitButton.style.cursor = "";
         });
 });
+
+
+// Menu toggle and active class
+
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
